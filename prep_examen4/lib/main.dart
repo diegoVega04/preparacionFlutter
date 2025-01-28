@@ -2,7 +2,44 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart'; //añadir tambien en las dependencias
 
 void main() {
-  runApp(MaterialApp(home: MainApp()));
+  //tooltip, gridview, intl, theme
+  runApp(AAA()); //clase para probar el cambio entre modo claro y oscuro
+  //runApp(MaterialApp(
+    //themeMode: ThemeMode.system, //para que pille automaticamente el del sistema (claro u oscuro)
+    //home: MainApp()));
+}
+
+
+class AAA extends StatefulWidget{
+  @override
+  State<StatefulWidget> createState() => _AAA();
+}
+
+class _AAA extends State<AAA> {
+  bool _s = false;
+
+  @override
+  Widget build(BuildContext context) {
+
+    return MaterialApp(
+      theme: ThemeData(
+            primarySwatch: Colors.green, // Color principal de la aplicación
+            brightness: _s? Brightness.dark :Brightness.light, // Tema claro u oscuro
+            textTheme: const TextTheme( // Estilo para los textos
+              bodyLarge: TextStyle(fontSize: 18, color: Colors.black),
+            ),
+          ),
+      home: Scaffold(
+        body: Switch(
+          activeColor: Colors.grey,
+          value: _s, 
+          onChanged: (value) => setState(() {
+            _s = value;
+          })),
+      ),
+    );
+  }
+
 }
 
 class MainApp extends StatelessWidget {
