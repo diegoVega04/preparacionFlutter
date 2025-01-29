@@ -1,0 +1,11 @@
+- mirar bien lo de model-viewModel-view
+- Stack entra fijo
+- dartDocs
+- internalización cambiar idioma
+- lo de los test
+- lo de map para cambiar valores y tal
+- Snackbar???
+- control de excepciones de números con decimales y tal
+- los ajustes se guardan en sharedPreferencies
+- MultiProvider
+- Centralizar cambios en materialApp????

@@ -11,6 +11,8 @@ void main() {
 
 
 class AAA extends StatefulWidget{
+  const AAA({super.key});
+
   @override
   State<StatefulWidget> createState() => _AAA();
 }
