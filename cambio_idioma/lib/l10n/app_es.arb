@@ -1,0 +1,9 @@
+{
+  "title": "Formulario con SnackBar",
+  "name": "Nombre",
+  "enter_name": "Introduce tu nombre",
+  "phone": "Teléfono",
+  "enter_phone": "Introduce tu número de teléfono",
+  "send": "Enviar",
+  "message": "Nombre: {name}, Teléfono: {phone}"
+}

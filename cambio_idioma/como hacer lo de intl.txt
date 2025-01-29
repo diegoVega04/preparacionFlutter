@@ -1,0 +1,6 @@
+- poner el pubspec como el que tengo
+- crear el archivo l10n.yaml con lo que pone ahi
+- crear la carpeta l10n en lib y meterle los archivos de las traducciones, las claves han de ser las mismas
+- poner en la terminal el comando "flutter gen-l10n" para generar los archivos necesarios
+- crear la clase LanguageProvider
+- poner el codigo que hay en el main y en la clase esta

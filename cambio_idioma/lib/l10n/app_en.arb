@@ -1,0 +1,9 @@
+{
+  "title": "Form with SnackBar",
+  "name": "Name",
+  "enter_name": "Enter your name",
+  "phone": "Phone",
+  "enter_phone": "Enter your phone number",
+  "send": "Send",
+  "message": "Name: {name}, Phone: {phone}"
+}
