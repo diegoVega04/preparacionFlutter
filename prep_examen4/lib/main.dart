@@ -3,7 +3,7 @@ import 'package:intl/intl.dart'; //añadir tambien en las dependencias
 
 void main() {
   //tooltip, gridview, intl, theme
-  runApp(AAA()); //clase para probar el cambio entre modo claro y oscuro
+  runApp(const AAA()); //clase para probar el cambio entre modo claro y oscuro
   //runApp(MaterialApp(
     //themeMode: ThemeMode.system, //para que pille automaticamente el del sistema (claro u oscuro)
     //home: MainApp()));

@@ -9,7 +9,7 @@ void main() {
         //color: Colors.grey,
       //);
   //Si es para meter distintos widgets y tal usar el ScrollView con un colum como child y ahi metes todo
-  runApp(MaterialApp(home: MainApp()));
+  runApp(const MaterialApp(home: MainApp()));
 }
 
 class MainApp extends StatefulWidget {

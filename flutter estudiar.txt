@@ -3,8 +3,15 @@
 - dartDocs
 - internalización cambiar idioma
 - lo de los test
-- lo de map para cambiar valores y tal
+- lo de map para cambiar valores y tal (map[clave])[clave2]
+
 - Snackbar???
+        ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+                content: Text("Hola, este es un SnackBar"),
+            ),
+            );
+
 - control de excepciones de números con decimales y tal
 - los ajustes se guardan en sharedPreferencies
 - MultiProvider

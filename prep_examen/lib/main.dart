@@ -4,7 +4,7 @@ import 'package:shared_preferences/shared_preferences.dart'; //importar lo de sh
 void main() {
   //aqui hay dropDownButton, switch, checkbox, image y mediaQuery.sizeOf
   //tambien lo de sharedPreferences --> solo funciona en android pero por si lo pide
-  runApp (MaterialApp(home: MainApp()));
+  runApp (const MaterialApp(home: MainApp()));
 }
 
 class MainApp extends StatefulWidget {
@@ -29,8 +29,8 @@ class _MainApp extends State<MainApp> {
   Future<void> _loadData() async {
     final prefs = await SharedPreferences.getInstance();
     setState(() {
-      _switchIsOn = prefs.getBool('switchstate') ?? false; //pone por defecto false
-      _checkIsOn = prefs.getBool('checkboxstate') ?? false;
+      _switchIsOn = prefs.getBool('switchState') ?? false; //pone por defecto false
+      _checkIsOn = prefs.getBool('checkboxState') ?? false;
     });
   }
 
@@ -57,14 +57,14 @@ class _MainApp extends State<MainApp> {
           value: _opcionDDB,
           hint: const Text("Selecciona una opcion"),
           items: const [
-            DropdownMenuItem(child: Text("Opcion 1"), value: "Opcion 1"),
-            DropdownMenuItem(child: Text("Opcion 2"), value: "Opcion 2"),
-            DropdownMenuItem(child: Text("Opcion 3"), value: "Opcion 3"),
+            DropdownMenuItem(value: "Opcion 1", child: Text("Opcion 1")),
+            DropdownMenuItem(value: "Opcion 2", child: Text("Opcion 2")),
+            DropdownMenuItem(value: "Opcion 3", child: Text("Opcion 3")),
           ], 
           onChanged: (value) => setState(() {_opcionDDB = value!;}),
         ),
         if (_opcionDDB != null)
-          Container(margin: EdgeInsets.all(20), child: Text("Seleccionaste: $_opcionDDB")),
+          Container(margin: const EdgeInsets.all(20), child: Text("Seleccionaste: $_opcionDDB")),
         Switch(
           value: _switchIsOn,
           onChanged: (bool newValue) {
@@ -98,7 +98,7 @@ class _MainApp extends State<MainApp> {
         ]),
         const SizedBox(height: 40, width: 40),
         Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-          Container(
+          SizedBox(
             width: MediaQuery.sizeOf(context).width/3, //esto me pilla la pantalla de la app no del portatil
             height: MediaQuery.sizeOf(context).height/3, //supongo que en movil te pilla la pantalla pq todo es a pantalla completa
             child: Image.network("https://fotos.quecochemecompro.com/opel-corsa/opel-corsa-dinamismo-carretera.jpg?size=750x400",
