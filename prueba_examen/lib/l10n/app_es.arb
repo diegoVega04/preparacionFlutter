@@ -1,0 +1,12 @@
+{
+  "titleSetting": "Ajustes",
+  "titleConverter": "Conversor",
+  "tittleTransactions": "Transacciones",
+  "lb_darkTheme": "Tema Oscuro",
+  "lb_language": "Idioma",
+  "lb_textSize": "Tamaño del texto",
+  "lb_inputValue": "Introduce el valor",
+  "txt_button": "Convertir y guardar",
+  "txt_result": "Resultado: ",
+  "message": "Transacción guardada correctamente" 
+}
